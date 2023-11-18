@@ -1,4 +1,4 @@
-function imagemHtml(link) {
+function numeroPlacar(link) {
     var linkImagemFilme = '<img src=' + link + '>'
     return linkImagemFilme
 }
@@ -6,6 +6,6 @@ function imagemHtml(link) {
 function adicionarFilme() {
     var filmeFavorito = document.getElementById('filme').value // serve para adquirir o valor de acordo com o id da var no codigo html
     var elementoListaFilme = document.getElementById('listaFilmes')
-    elementoListaFilme.innerHTML = elementoListaFilme.innerHTML + imagemHtml(filmeFavorito)
+    elementoListaFilme.innerHTML = elementoListaFilme.innerHTML + numeroPlacar(filmeFavorito)
     document.getElementById('filme').value = ''
 }
