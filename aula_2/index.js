@@ -30,5 +30,5 @@ while (chute != numeroSecreto && chances > 0){
 };
 
 if (chances == 0){
-    alert('Game Over!')
+    alert('Game Over!', numeroSecreto)
 }
